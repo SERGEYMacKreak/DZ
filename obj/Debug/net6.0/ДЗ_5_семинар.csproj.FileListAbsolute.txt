@@ -1,0 +1,15 @@
+C:\Users\Олис\Desktop\учеба сергей\ДЗ_5_семинар\bin\Debug\net6.0\ДЗ_5_семинар.exe
+C:\Users\Олис\Desktop\учеба сергей\ДЗ_5_семинар\bin\Debug\net6.0\ДЗ_5_семинар.deps.json
+C:\Users\Олис\Desktop\учеба сергей\ДЗ_5_семинар\bin\Debug\net6.0\ДЗ_5_семинар.runtimeconfig.json
+C:\Users\Олис\Desktop\учеба сергей\ДЗ_5_семинар\bin\Debug\net6.0\ДЗ_5_семинар.dll
+C:\Users\Олис\Desktop\учеба сергей\ДЗ_5_семинар\bin\Debug\net6.0\ДЗ_5_семинар.pdb
+C:\Users\Олис\Desktop\учеба сергей\ДЗ_5_семинар\obj\Debug\net6.0\ДЗ_5_семинар.csproj.AssemblyReference.cache
+C:\Users\Олис\Desktop\учеба сергей\ДЗ_5_семинар\obj\Debug\net6.0\ДЗ_5_семинар.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Олис\Desktop\учеба сергей\ДЗ_5_семинар\obj\Debug\net6.0\ДЗ_5_семинар.AssemblyInfoInputs.cache
+C:\Users\Олис\Desktop\учеба сергей\ДЗ_5_семинар\obj\Debug\net6.0\ДЗ_5_семинар.AssemblyInfo.cs
+C:\Users\Олис\Desktop\учеба сергей\ДЗ_5_семинар\obj\Debug\net6.0\ДЗ_5_семинар.csproj.CoreCompileInputs.cache
+C:\Users\Олис\Desktop\учеба сергей\ДЗ_5_семинар\obj\Debug\net6.0\ДЗ_5_семинар.dll
+C:\Users\Олис\Desktop\учеба сергей\ДЗ_5_семинар\obj\Debug\net6.0\refint\ДЗ_5_семинар.dll
+C:\Users\Олис\Desktop\учеба сергей\ДЗ_5_семинар\obj\Debug\net6.0\ДЗ_5_семинар.pdb
+C:\Users\Олис\Desktop\учеба сергей\ДЗ_5_семинар\obj\Debug\net6.0\ДЗ_5_семинар.genruntimeconfig.cache
+C:\Users\Олис\Desktop\учеба сергей\ДЗ_5_семинар\obj\Debug\net6.0\ref\ДЗ_5_семинар.dll
