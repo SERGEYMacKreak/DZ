@@ -88,73 +88,65 @@
 // Задача 38: Задайте массив вещественных чисел от -100 до 100 (длина массива 5 элементов). Найдите разницу между максимальным и минимальным элементов массива.
 // [3 7 22 2 78] -> 76
 
-double[] array = new double[5];
-double diffMaxMin = 0;
-double min = array[0];
-double max = min;
+// double[] array = new double[5];
+// double min = array[0];
+// double max = min;
+// double diffMaxMin = 0;
 
-RandomArray(array); // рандомные числа
-PrintRandomArray(array); // печать рандомные числа
-FaindMin(array, min); // минимал значение
-FaindMax(array, max); // макс значение
-PrintDiffMaxMin(diffMaxMin, max, min); // разница между максимальным и минимальным элементом массива
+// RandomArray(array); // рандомные числа
+// PrintRandomArray(array); // печать рандомные числа
+// Console.WriteLine();
+// FaindNMin(array, min); // минимал значение
+// FaindNMax(array, max); // макс значение
+// PrintDiffMaxMin(diffMaxMin, max, min); // разница между максимальным и минимальным элементом массива НЕРАБОТАЕТ
 
-void RandomArray(double[] array)
-{
-for (int i = 0; i < array.Length; i++) 
-{
-    int randomNumber = new Random().Next (-100, 100);
-    array[i] = randomNumber; 
-}
-}
-void PrintRandomArray(double[] array)
-{
-for (int i = 0; i < array.Length; i++)
-{
-    Console.Write(array[i] + " ");
-}
-}
+// void RandomArray(double[] array)
+// {
+// for (int i = 0; i < array.Length; i++) 
+// {
+//     int randomNumber = new Random().Next (-100, 100);
+//     array[i] = randomNumber; 
+// }
+// }
 
-double FaindMin(double[] array, double min)
-{
-  for (int i = 0; i < array.Length; i++)
-  {
-    if (array[i] <= min)
-    {
-      min = array[i];
-      return min;
-    }
-  }
-  return min;
-}
+// void PrintRandomArray(double[] array)
+// {
+// for (int i = 0; i < array.Length; i++)
+// {
+//     Console.Write(array[i] + " ");
+// }
+// }
 
-double FaindMax(double[] array, double max)
-{
-  for (int i = 0; i < array.Length; i++)
-  {
-    if (array[i] >= max)
-    {
-      max = array[i];
-      return max;
-    }
-  }
-  return max;
-}
+// void FaindNMin(double[] array, double min)
+// {
+//   for (int i = 0; i < array.Length; i++)
+//   {
+//     if (array[i] < min)
+//     {
+//       min = array[i];
 
-void PrintDiffMaxMin(double max, double min, double diffMaxMin)
-{
-diffMaxMin += (max - min);
-Console.WriteLine($" разницу между максимальным {max} и минимальным {min} элементами массива = {diffMaxMin}");
-}
+//     }
+//   }
+//   Console.WriteLine($"минимальное значение = {min}");
+// }
 
+// void FaindNMax(double[] array, double max)
+// {
+//   for (int i = 0; i < array.Length; i++)
+//   {
+//     if (array[i] > max)
+//     {
+//       max = array[i];
+//     }
+//   }
+//   Console.WriteLine($"максимальное значение = {max}");
+// }
 
-
-
-
-
-
-
-
+// void PrintDiffMaxMin(double max, double min, double diffMaxMin) // ПОЧЕМУ НЕ РАБОТАЕТ!!!!!!!!!!!!!!!!
+// {
+//   diffMaxMin =+ (max - min); //  не сохраняются нове значения max и min !!!!!!!!!
+//   Console.WriteLine($"разницу между максимальным {max} и минимальным {min} элементами массива = {diffMaxMin}");
+// }
 
 
 
@@ -162,9 +154,63 @@ Console.WriteLine($" разницу между максимальным {max} и
 
 
 // Доп. задачи
-// Задача 3: Задайте массив из 8 случайных чисел из промежутка [-9, 9]. Напишите программу получает на вход число и определяет, присутствует ли заданное число в массиве.
+// Задача 3: Задайте массив из 8 случайных чисел из промежутка [-9, 9]. Напишите программу получает на вход число и определяет, 
+// присутствует ли заданное число в массиве.
 // 4; массив [6, 7, 19, 345, 3] -> нет
 // 3; массив [6, 7, 19, 345, 3] -> да
+
+int[] array = new int[8];
+Console.Write("Введите число N: ");
+int nomber = Convert.ToInt32(Console.ReadLine());
+
+RandomArray(array); // рандомные числа
+PrintRandomArray(array); // печать рандомные числа
+Console.WriteLine();
+ReconNomber(array, nomber); // поиск совподений
+
+void RandomArray(int[] array)
+{
+  for (int i = 0; i < array.Length; i++)
+  {
+    int randomNumber = new Random().Next(-9, 9);
+    array[i] = randomNumber;
+  }
+}
+
+void PrintRandomArray(int[] array)
+{
+  for (int i = 0; i < array.Length; i++)
+  {
+    Console.Write(array[i] + " ");
+  }
+}
+
+void ReconNomber(int[] array, int nomber)
+{
+  if (10 > nomber && -10 < nomber)
+  {
+    for (int i = 0; i < array.Length; i++)
+    {
+      if (nomber == array[i])
+      {
+        Console.Write($"Число {nomber} есть в массиве");
+        break;
+      }
+      Console.Write($"Числа {nomber} НЕТ в массиве");
+      break;
+    }
+  }
+  else Console.Write("ввидите число от -9 до 9");
+}
+
+
+
+
+
+
+
+
+
 
 // Задача 4: Задайте массив из 10 случайных чисел из промежутка [-100, 100]. Найдите количество элементов массива, значения которых лежат в отрезке [10,99].
 // Пример для массива из 5, а не 10 элементов. В своём решении сделайте для 10
